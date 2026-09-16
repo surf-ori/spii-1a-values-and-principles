@@ -1,4 +1,4 @@
-# SPII 1A: Values and Principles
+# SPII 1A: Reference model for: Values and Principles
 
 Feedback and issue tracker for SPII deliverable 1A, Values and Principles, part of the [SPII overview](https://surf-ori.github.io/spii-overview/).
 
