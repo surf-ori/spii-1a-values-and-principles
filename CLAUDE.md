@@ -28,7 +28,7 @@ your own judgement.
 ## AI-generated content
 
 If an agent drafts a closing comment or decision on an issue here, that comment is
-public-interest text about a policy deliverable. Follow the `labeling-ai-generated-content` skill:
+public-interest text about a policy deliverable. Follow the `eu-ai-act-transparency-label-for-ai-generated-content` skill:
 say plainly in the comment that it was drafted with AI assistance, mirroring the disclosure
 already on the spii-overview page.
 
