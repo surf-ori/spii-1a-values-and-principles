@@ -28,6 +28,21 @@
   .btn-secondary{background:transparent; color:var(--text); border:1px solid var(--border);}
   a{color:var(--accent-strong);}
   footer{margin-top:48px; font-size:13px; color:var(--text-muted); border-top:1px solid var(--border); padding-top:20px;}
+  section.data-section{margin-top:56px;}
+  section.data-section h2{font-size:20px; margin:0 0 6px;}
+  section.data-section .section-note{font-size:13px; margin-top:-2px;}
+  .table-scroll{overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:4px;}
+  table{border-collapse:collapse; width:100%; min-width:980px; table-layout:fixed; font-size:13px;}
+  td,th{overflow-wrap:break-word;}
+  caption{caption-side:top; text-align:left; font-size:12px; color:var(--text-muted); padding:10px 12px 0;}
+  th,td{border-bottom:1px solid var(--border); padding:10px 12px; text-align:left; vertical-align:top;}
+  th{background:var(--surface); position:sticky; top:0; font-weight:600;}
+  td.group-cell{font-weight:600;}
+  .level-name{display:block; font-weight:600; margin-bottom:2px;}
+  .level-desc{color:var(--text-muted);}
+  .placeholder{font-style:italic; opacity:.6;}
+  .csv-link{font-size:13px;}
+  .pending{border:1px dashed var(--border); border-radius:4px; padding:16px 18px; color:var(--text-muted); font-size:14px;}
 </style>
 </head>
 <body>
@@ -40,6 +55,133 @@
     <a class="btn btn-primary" href="https://github.com/surf-ori/spii-1a-values-and-principles/issues/new/choose">Give feedback</a>
     <a class="btn btn-secondary" href="https://github.com/surf-ori/spii-1a-values-and-principles/issues">Browse the tracker</a>
   </div>
+
+  <section class="data-section" id="original-maturity-matrix">
+    <h2>Original maturity matrix</h2>
+    <p class="section-note">The earliest draft maturity matrix for these values and principles, extracted verbatim from
+      <a href="https://github.com/tillbey/open-science-maturity">tillbey/open-science-maturity</a>, the precursor to
+      deliverable 1B's <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/">maturity assessment tool</a>.
+      Scored 0 (not yet assessed) to 4 per subprinciple. This was an unfinished draft — most level
+      descriptions below are still placeholder text (<span class="placeholder">…</span> or "Maturity level N"),
+      kept as-is for faithful extraction rather than filled in.</p>
+    <div class="table-scroll">
+      <table>
+        <caption>Source: data/original-maturity-matrix.csv</caption>
+        <colgroup>
+          <col style="width:130px"><col style="width:190px">
+          <col style="width:165px"><col style="width:165px"><col style="width:165px"><col style="width:165px">
+        </colgroup>
+        <thead>
+          <tr><th>Value</th><th>Subprinciple</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="group-cell" rowspan="3">Open<br><span class="level-desc">The most crucial principle for Open Science infrastructures.</span></td>
+            <td>Results openly available<br><span class="level-desc">Results refers to any output created by the infrastructure itself (the software running the infrastructure) or stored in it (e.g. datasets, content).</span></td>
+            <td><span class="level-name">Results not available</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Metadata about results available</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Results openly available</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">FAIR results</span><span class="level-desc">All results are adhering fully to the FAIR principles.</span></td>
+          </tr>
+          <tr>
+            <td>Transparent processes<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td>Innovative<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">At a stand still</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Ad-hoc improvements</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Continously innovating</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td class="group-cell" rowspan="3">Autonomy<br><span class="level-desc">Who is calling the shots.</span></td>
+            <td>Community governed<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td>Clear responsibilities<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td>Vendor independent<br><span class="level-desc">Check for example the <a href="https://utrechtuniversity.github.io/digital-autonomy-assessment-tool/">Digital Autonomy Assessment Framework</a></span></td>
+            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td class="group-cell" rowspan="4">Sustainable<br><span class="level-desc">Keeping the lights on.</span></td>
+            <td>Financially secure<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Unfunded</span><span class="level-desc">There is no funding at the moment and for the forseeable future.</span></td>
+            <td><span class="level-name">Time-limited funding</span><span class="level-desc">There is time-limited funding, e.g. through a one-off grant or donation.</span></td>
+            <td><span class="level-name">Recurrent commitment</span><span class="level-desc">There is for a number of years funding, e.g. through memberships and recurrent grants.</span></td>
+            <td><span class="level-name">Structually funded</span></td>
+          </tr>
+          <tr>
+            <td>Human capacity available<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Zombie infrastructure</span><span class="level-desc">No one is working on this infrastructure for a forseeable time.</span></td>
+            <td><span class="level-name">One-person show</span><span class="level-desc">One hero is keeping the lights on, but there is no backup.</span></td>
+            <td><span class="level-name">Somewhat staffed</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Dedicated resourcing</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td>Legal and policy compliant<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Unknown</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Major gaps</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Bases covered</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Audited or certified</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td>Resilient<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Falls over at the first breeze</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Major gaps</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Bases covered</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Can weather a hurricane</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td class="group-cell" rowspan="3">Usable<br><span class="level-desc">Providing a good user experience and letting researchers achieve their goals.</span></td>
+            <td>Interconnected<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Isolated system</span><span class="level-desc">This infrastructure has non integrations with others, and makes it difficult to even exchange data.</span></td>
+            <td><span class="level-name">Uses other systems</span><span class="level-desc">Ingest e.g. data from other systems.</span></td>
+            <td><span class="level-name">Two-way connected</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Part of flourishing ecosystem</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td>Seamless user-experience<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+          </tr>
+          <tr>
+            <td>Accessible to all<br><span class="level-desc">Explanatory text</span></td>
+            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="csv-link"><a href="data/original-maturity-matrix.csv" download>Download as CSV</a> · see <a href="data/README.md">data/README.md</a> for provenance.</p>
+  </section>
+
+  <section class="data-section" id="consultation-rounds">
+    <h2>Consultation rounds</h2>
+    <p class="section-note">The input gathered across the consultation rounds that shaped these values and principles.</p>
+    <p class="pending">Not yet added — this section is a placeholder pending the consultation-round data.</p>
+  </section>
+
   <footer>Part of the <a href="https://surf-ori.github.io/spii-overview/">SPII overview</a>. See the <a href="https://surf-ori.github.io/spii-overview/#way-of-working">way of working</a> for how a curator reviews feedback and records the outcome.</footer>
 </div>
 </body>
