@@ -18,21 +18,28 @@
   }
   *{box-sizing:border-box;}
   body{margin:0; background:var(--bg); color:var(--text); font-family:system-ui, sans-serif; line-height:1.55;}
-  .wrap{max-width:640px; margin:0 auto; padding:64px 20px;}
+  .section{margin:0 auto; padding:0 20px;}
+  .section--narrow{max-width:640px;}
+  .section--wide{max-width:1140px;}
+  .hero{padding-top:64px;}
   .kicker{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:var(--accent);}
   h1{font-size:clamp(26px,4vw,36px); margin:10px 0 18px; letter-spacing:-0.01em;}
+  h2{font-size:20px; margin:0 0 6px;}
+  h3{font-size:16px; margin:26px 0 8px; color:var(--accent-strong);}
   p{color:var(--text-muted); max-width:60ch;}
+  .section--wide p.section-note{max-width:80ch;}
   .actions{display:flex; gap:12px; flex-wrap:wrap; margin-top:28px;}
   .btn{font-weight:600; font-size:15px; padding:12px 20px; border-radius:3px; text-decoration:none; display:inline-block;}
   .btn-primary{background:var(--accent); color:var(--on-accent);}
   .btn-secondary{background:transparent; color:var(--text); border:1px solid var(--border);}
   a{color:var(--accent-strong);}
-  footer{margin-top:48px; font-size:13px; color:var(--text-muted); border-top:1px solid var(--border); padding-top:20px;}
+  .ai-disclosure{display:inline-block; margin:0 0 22px; padding:5px 12px; border:1px solid var(--border); border-radius:20px; font-size:12.5px; color:var(--text-muted);}
+  footer{margin-top:8px; font-size:13px; color:var(--text-muted); border-top:1px solid var(--border); padding:20px 20px 64px; max-width:640px; margin-left:auto; margin-right:auto;}
+
   section.data-section{margin-top:56px;}
-  section.data-section h2{font-size:20px; margin:0 0 6px;}
-  section.data-section .section-note{font-size:13px; margin-top:-2px;}
+  .section-note{font-size:13px; margin-top:-2px;}
   .table-scroll{overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:4px;}
-  table{border-collapse:collapse; width:100%; min-width:980px; table-layout:fixed; font-size:13px;}
+  table{border-collapse:collapse; width:100%; font-size:13px;}
   td,th{overflow-wrap:break-word;}
   caption{caption-side:top; text-align:left; font-size:12px; color:var(--text-muted); padding:10px 12px 0;}
   th,td{border-bottom:1px solid var(--border); padding:10px 12px; text-align:left; vertical-align:top;}
@@ -43,145 +50,448 @@
   .placeholder{font-style:italic; opacity:.6;}
   .csv-link{font-size:13px;}
   .pending{border:1px dashed var(--border); border-radius:4px; padding:16px 18px; color:var(--text-muted); font-size:14px;}
+
+  /* Outcome table */
+  table.outcome{table-layout:fixed; min-width:900px;}
+  table.outcome colgroup col.col-value{width:200px;}
+  table.outcome colgroup col.col-quote{width:auto;}
+  table.outcome colgroup col.col-principle{width:190px;}
+  table.outcome colgroup col.col-sub{width:auto;}
+  table.outcome colgroup col.col-actions{width:auto;}
+  .num-list{margin:0; padding:0; list-style:none; font-size:13px;}
+  .num-list li{margin-bottom:3px;}
+  ol.ref-list{font-size:12px; color:var(--text-muted); padding-left:18px;}
+  ol.ref-list li{margin-bottom:6px;}
+
+  /* Story */
+  .stat-row{display:flex; gap:14px; flex-wrap:wrap; margin:20px 0 28px;}
+  .stat{background:var(--surface); border:1px solid var(--border); border-radius:4px; padding:10px 16px; min-width:110px;}
+  .stat b{display:block; font-size:22px; color:var(--accent-strong); line-height:1.2;}
+  .stat span{font-size:12px; color:var(--text-muted);}
+  blockquote{margin:16px 0; padding:8px 16px; border-left:3px solid var(--accent); background:var(--surface); font-style:italic;}
+  blockquote p{color:var(--text); margin:0;}
+  p.quote-source{font-size:12px; color:var(--text-muted); margin-top:-14px; font-style:normal;}
+
+  /* Maturity matrix (full width) */
+  table.matrix{table-layout:fixed; min-width:1000px;}
+
+  /* Source materials */
+  .archive-stage{margin-bottom:28px;}
+  .archive-stage h3{margin-top:0;}
+  .archive-files{list-style:none; margin:0; padding:0; font-size:13px;}
+  .archive-files li{padding:6px 0; border-bottom:1px solid var(--border);}
+  .archive-files li:last-child{border-bottom:none;}
+  .archive-files .file-note{display:block; font-size:12px; color:var(--text-muted);}
 </style>
 </head>
 <body>
-<div class="wrap">
+
+<div class="section section--narrow hero">
   <span class="kicker">Reference model · SPII 1A</span>
   <h1>Values and Principles</h1>
-  <p>Shared values and principles that define a connected Open Science infrastructure.</p>
+  <p>Shared values and principles that define a connected Open Science infrastructure — drafted at a national consultation on July 1, 2026, and published here as a work in progress.</p>
   <p>This page is SPII deliverable 1A's feedback and issue tracker. Anyone can open an issue to propose a correction, flag a gap, or suggest an addition.</p>
+  <p class="ai-disclosure">AI-assisted: the "how these were formed" story and the file conversions below were drafted with AI (Claude) from the linked source archive, and are pending review by the SPII team.</p>
   <div class="actions">
     <a class="btn btn-primary" href="https://github.com/surf-ori/spii-1a-values-and-principles/issues/new/choose">Give feedback</a>
     <a class="btn btn-secondary" href="https://github.com/surf-ori/spii-1a-values-and-principles/issues">Browse the tracker</a>
   </div>
+</div>
 
-  <section class="data-section" id="original-maturity-matrix">
-    <h2>Original maturity matrix</h2>
-    <p class="section-note">The earliest draft maturity matrix for these values and principles, extracted verbatim from
-      <a href="https://github.com/tillbey/open-science-maturity">tillbey/open-science-maturity</a>, the precursor to
-      deliverable 1B's <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/">maturity assessment tool</a>.
-      Scored 0 (not yet assessed) to 4 per subprinciple. This was an unfinished draft — most level
-      descriptions below are still placeholder text (<span class="placeholder">…</span> or "Maturity level N"),
-      kept as-is for faithful extraction rather than filled in.</p>
-    <div class="table-scroll">
-      <table>
-        <caption>Source: data/original-maturity-matrix.csv</caption>
-        <colgroup>
-          <col style="width:130px"><col style="width:190px">
-          <col style="width:165px"><col style="width:165px"><col style="width:165px"><col style="width:165px">
-        </colgroup>
-        <thead>
-          <tr><th>Value</th><th>Subprinciple</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="group-cell" rowspan="3">Open<br><span class="level-desc">The most crucial principle for Open Science infrastructures.</span></td>
-            <td>Results openly available<br><span class="level-desc">Results refers to any output created by the infrastructure itself (the software running the infrastructure) or stored in it (e.g. datasets, content).</span></td>
-            <td><span class="level-name">Results not available</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Metadata about results available</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Results openly available</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">FAIR results</span><span class="level-desc">All results are adhering fully to the FAIR principles.</span></td>
-          </tr>
-          <tr>
-            <td>Transparent processes<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td>Innovative<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">At a stand still</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Ad-hoc improvements</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Continously innovating</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td class="group-cell" rowspan="3">Autonomy<br><span class="level-desc">Who is calling the shots.</span></td>
-            <td>Community governed<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td>Clear responsibilities<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td>Vendor independent<br><span class="level-desc">Check for example the <a href="https://utrechtuniversity.github.io/digital-autonomy-assessment-tool/">Digital Autonomy Assessment Framework</a></span></td>
-            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td class="group-cell" rowspan="4">Sustainable<br><span class="level-desc">Keeping the lights on.</span></td>
-            <td>Financially secure<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Unfunded</span><span class="level-desc">There is no funding at the moment and for the forseeable future.</span></td>
-            <td><span class="level-name">Time-limited funding</span><span class="level-desc">There is time-limited funding, e.g. through a one-off grant or donation.</span></td>
-            <td><span class="level-name">Recurrent commitment</span><span class="level-desc">There is for a number of years funding, e.g. through memberships and recurrent grants.</span></td>
-            <td><span class="level-name">Structually funded</span></td>
-          </tr>
-          <tr>
-            <td>Human capacity available<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Zombie infrastructure</span><span class="level-desc">No one is working on this infrastructure for a forseeable time.</span></td>
-            <td><span class="level-name">One-person show</span><span class="level-desc">One hero is keeping the lights on, but there is no backup.</span></td>
-            <td><span class="level-name">Somewhat staffed</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Dedicated resourcing</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td>Legal and policy compliant<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Unknown</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Major gaps</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Bases covered</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Audited or certified</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td>Resilient<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Falls over at the first breeze</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Major gaps</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Bases covered</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Can weather a hurricane</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td class="group-cell" rowspan="3">Usable<br><span class="level-desc">Providing a good user experience and letting researchers achieve their goals.</span></td>
-            <td>Interconnected<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Isolated system</span><span class="level-desc">This infrastructure has non integrations with others, and makes it difficult to even exchange data.</span></td>
-            <td><span class="level-name">Uses other systems</span><span class="level-desc">Ingest e.g. data from other systems.</span></td>
-            <td><span class="level-name">Two-way connected</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Part of flourishing ecosystem</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td>Seamless user-experience<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
-          </tr>
-          <tr>
-            <td>Accessible to all<br><span class="level-desc">Explanatory text</span></td>
-            <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
-            <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="csv-link"><a href="data/original-maturity-matrix.csv" download>Download as CSV</a> · see <a href="data/README.md">data/README.md</a> for provenance.</p>
-  </section>
+<section class="section section--wide data-section" id="outcome">
+  <h2>The outcome: three values, five principles</h2>
+  <p class="section-note">Version dated July 8, 2026 — the framework this repository tracks feedback on. Three shared
+    values, grounded in UNESCO's Open Science recommendation and the Dutch NPOS2030 ambition document; five
+    principles, each broken into subprinciples and the actions that put them into practice. See
+    <a href="#how-these-were-formed">how it was formed</a> below.</p>
 
-  <section class="data-section" id="consultation-rounds">
-    <h2>Consultation rounds</h2>
-    <p class="section-note">The input gathered across the consultation rounds that shaped these values and principles.</p>
-    <p class="pending">Not yet added — this section is a placeholder pending the consultation-round data.</p>
-  </section>
+  <h3>Values</h3>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th style="width:220px">Value</th><th>Grounded in</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="group-cell">Quality and integrity</td>
+          <td>"Quality and integrity" (UNESCO); "Reproducibility and scrutiny are essential to safeguard the quality and integrity of scientific work" (NPOS)</td>
+        </tr>
+        <tr>
+          <td class="group-cell">Collective benefit</td>
+          <td>"Collective benefit" (UNESCO); "Scientific knowledge is a public good and access to it is a universal right" (NPOS)</td>
+        </tr>
+        <tr>
+          <td class="group-cell">Equity, fairness, diversity and inclusion</td>
+          <td>"Equity and fairness" (UNESCO); "Diversity and inclusiveness" (UNESCO); "Diversity, equity, and inclusiveness are crucial for the success of Open Science" (NPOS)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="section-note">Values can be seen as shared commitments. The values of UNESCO and NPOS are taken as a
+    point of departure for developing the principles below — actionable guidelines that can be made operational
+    as actions, enablers, practices, or consequences.</p>
 
+  <h3>Principles, subprinciples, and actions</h3>
+  <div class="table-scroll">
+    <table class="outcome">
+      <colgroup>
+        <col class="col-principle"><col class="col-sub"><col class="col-actions">
+      </colgroup>
+      <thead><tr><th>Principle</th><th>Subprinciples</th><th>Actions, enablers, practices, consequences</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="group-cell">Openness<br><span class="level-desc">Scientific outputs and processes must be as open as possible, but as restricted as necessary<sup>1</sup></span></td>
+          <td>
+            <ul class="num-list">
+              <li>Transparency<sup>2,3</sup>: Governance<sup>4</sup>, Operations<sup>4</sup>, Provenance<sup>5</sup>, Economical, Strategical</li>
+              <li>1.2 Accessibility</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="num-list">
+              <li>11. Open-source software</li><li>12. Open data</li><li>13. Open APIs</li>
+              <li>14. Open repositories</li><li>15. Open metadata</li><li>16. Open licences</li>
+              <li>17. Public infrastructure stack</li><li>18. Knowledge security (by security-by-design)</li>
+              <li>19. IAM (with access options for Citizen Scientists)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="group-cell">Autonomy<br><span class="level-desc">Academic and digital sovereignty must be safeguarded<sup>1</sup></span></td>
+          <td>
+            <ul class="num-list">
+              <li>2.1 Stakeholder governed/community-led<sup>3,6</sup></li>
+              <li>2.2 Discipline-specific<sup>4</sup></li>
+              <li>2.3 Digital sovereignty</li>
+              <li>2.4 Responsibility<sup>3</sup></li>
+            </ul>
+          </td>
+          <td>
+            <ul class="num-list">
+              <li>20. Value-driven procurement</li><li>21. Balance agency versus costs &amp; risks</li>
+              <li>22. Contractual clauses and exit strategy</li><li>23. Fit-for-Purpose</li>
+              <li>24. Regular review of purpose and community value</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="group-cell">Sustainability</td>
+          <td>
+            <ul class="num-list">
+              <li>3.1 Financial sustainability</li><li>3.2 Human capacity sustainability</li>
+              <li>3.3 Legal and institutional compliance</li><li>3.4 Enduring availability<sup>4,5</sup></li>
+            </ul>
+          </td>
+          <td>
+            <ul class="num-list">
+              <li>30. Make or buy guidelines</li><li>31. Total costs of ownership</li>
+              <li>32. Mission-consistent revenue generation</li><li>33. End-of-life policy</li>
+              <li>34. Sustainable funding or funding for sustainability</li><li>35. Sustained maintenance</li>
+              <li>36. Support for public stack</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="group-cell">Interoperability</td>
+          <td>
+            <ul class="num-list">
+              <li>4.1 Technical interoperability</li><li>4.2 Organisational &amp; social interoperability</li>
+              <li>4.3 Legal interoperability</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="num-list">
+              <li>40. Syntactic:</li><li>&nbsp;&nbsp;40a. Open standards<sup>5</sup></li><li>&nbsp;&nbsp;40b. PIDs</li>
+              <li>&nbsp;&nbsp;40c. Connections to international infrastructures</li>
+              <li>41. Semantic:</li><li>&nbsp;&nbsp;41a. Vocabularies/ontologies</li>
+              <li>42. Terms of use</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="group-cell">Researcher-centric</td>
+          <td>
+            <ul class="num-list"><li>5.1 Seamless user-experience<sup>3</sup></li></ul>
+          </td>
+          <td>
+            <ul class="num-list"><li>51. User-driven design</li><li>52. Recognition and rewards framework</li></ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol class="ref-list">
+    <li>NPOS. <em>Open Science 2030 in the Netherlands: NPOS2030 Ambition Document and Rolling Agenda.</em> <a href="https://zenodo.org/record/7433767">zenodo.org/record/7433767</a> (2022). doi:10.5281/ZENODO.7433767.</li>
+    <li><em>UNESCO Recommendation on Open Science</em> — UNESCO Digital Library. <a href="https://unesdoc.unesco.org/ark:/48223/pf0000379949">unesdoc.unesco.org/ark:/48223/pf0000379949</a>.</li>
+    <li>Lin, D. et al. The TRUST Principles for digital repositories. <em>Sci. Data</em> 7, 144 (2020).</li>
+    <li>The Principles of Open Scholarly Infrastructure (v2.0, 2025). <a href="https://openscholarlyinfrastructure.org/">openscholarlyinfrastructure.org</a>.</li>
+    <li>Bijsterbosch, M. et al. <em>Seven Guiding Principles for Open Research Information.</em> <a href="https://zenodo.org/records/6074944">zenodo.org/records/6074944</a> (2022). doi:10.5281/zenodo.6074944 — the same document adapted as the <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/#7gpri">7GPRI framework</a> in deliverable 1B's assessment tool.</li>
+    <li>Universities of the Netherlands &amp; Association of Universities in the Netherlands. <em>A new open access strategy for the Netherlands.</em> doi:10.5281/zenodo.19548009 (2026).</li>
+  </ol>
+  <p class="csv-link">Source: <a href="data/consultation/04-consultation-outcome-framework/values-and-principles-2026-07-08.md">values-and-principles-2026-07-08.md</a> (converted from the original <a href="data/consultation/04-consultation-outcome-framework/values-and-principles-2026-07-08.docx">.docx</a>).</p>
+</section>
+
+<section class="section section--narrow data-section" id="how-these-were-formed">
+  <h2>How these values and principles were formed</h2>
+  <p>Sixty people picked apart Open Science infrastructure for an afternoon at SURF's Utrecht office on July 1,
+    2026. A week later, the arguments had settled into the table above.</p>
+
+  <div class="stat-row">
+    <div class="stat"><b>59</b><span>Mentimeter respondents</span></div>
+    <div class="stat"><b>8</b><span>breakout-group posters</span></div>
+    <div class="stat"><b>72</b><span>challenges named</span></div>
+    <div class="stat"><b>7</b><span>days to a draft table</span></div>
+  </div>
+
+  <h3>A four-year run-up</h3>
+  <p>The Dutch open-science community agreed on shared ambitions in 2022, when the National Programme Open
+    Science (NPOS) published its NPOS2030 Ambition Document with five guiding principles. Three became this
+    framework's values, quoted almost verbatim: quality and integrity, collective benefit, and equity, fairness,
+    diversity and inclusion. The other two, reworded, became its first two principles — "as open as possible, but
+    as restricted as necessary" became Openness, and "academic and digital sovereignty must be safeguarded"
+    became Autonomy.</p>
+  <p>Turning ambition into infrastructure took longer. Open Science NL, the funding body set up in 2023, began
+    financing open-infrastructure projects. Sixteen organizations — among them OCW, NWO, Universities of the
+    Netherlands (UNL), NFU and SURF — formed a standing national consultation to coordinate. By November 2024 they
+    had agreed to develop a joint project: the Strategic Plan for Integrated Infrastructure for Open Science, or
+    SPII. A first phase delivered results by mid-2025; a second phase, SPII 2026, started that April with a
+    mandate to build a reference model for the whole landscape. The July 1 consultation was its opening move.</p>
+
+  <h3>The day itself</h3>
+  <p>John Doove of SURF chaired the afternoon; Darco Jansen of Universities of the Netherlands introduced the
+    programme. Maurits van der Graaf presented a proposed reference model — guiding principles, a landscape
+    overview, shared terminology and an interoperability framework — before the room split into breakout groups.</p>
+  <p>Fifty-nine attendees answered a live poll on which infrastructure they represented, with more than one
+    answer allowed. Research data management projects made up the largest group (13, plus 2 more in research
+    software management), followed by disciplinary infrastructures (12), publication and CRIS systems (12
+    combined), open-science coordination and policy roles (11), infrastructure-as-a-whole roles (6), open
+    research information (3) and hardware (2).</p>
+  <p>Organizers walked in with a skeleton already sketched: the three NPOS-derived values, Openness and Autonomy
+    as principles, and Sustainability, Interoperability and Researcher-centric proposed alongside them. The
+    breakout groups' task wasn't to invent from a blank page — it was to add or change the subprinciples, and to
+    name the practices that would put each principle into effect. Seven people per table, one poster each.</p>
+
+  <h3>What the posters said</h3>
+  <p>The eight groups worked from a shared template — principles down the left, subprinciples and consequences
+    across — and filled it in with sticky notes.</p>
+  <blockquote><p>"Processes are key. Describe the process of the research journey (interacting with the systems
+    in and outside your uni)."</p></blockquote>
+  <p class="quote-source">— breakout poster 1, Openness column</p>
+  <blockquote><p>"Risk assessments: using a commercial system might cost more than developing in-house — but you
+    can stop paying, not sack staff."</p></blockquote>
+  <p class="quote-source">— breakout poster 1, Sustainability column</p>
+  <blockquote><p>"Make sure you have USERS!"</p></blockquote>
+  <p class="quote-source">— breakout poster 1, Researcher-centric column</p>
+  <p>The closing plenary polled the room again on the day's broader challenges: 72 answers, which organizers
+    sorted into themes. Governance topped the list at 22 mentions, ahead of fragmented infrastructure connections
+    (13), sustainability (11), interoperability (6), user needs (6), security (3), closed-source software (2) and
+    shared terminology (2).</p>
+
+  <h3>Not everyone was convinced</h3>
+  <p>The closing feedback wasn't uniformly positive. Among the written remarks organizers recorded:</p>
+  <blockquote><p>"We have discussed the principles for years already. Focus on use cases and implementation."</p></blockquote>
+  <blockquote><p>"Please convince me that we need additional principle harmonizing work given that the
+    universities have already signed off the NPOS principles."</p></blockquote>
+  <blockquote><p>"Too abstract."</p></blockquote>
+  <p>Other attendees asked for the consultation itself to widen: invite researchers directly, connect to related
+    national projects, and "don't limit review &amp; discussion of the reference model as a whole to the Open
+    Science festival only." That comment turned out prescient — a dedicated review workshop was already scheduled
+    for the Open Science Festival on Oct. 14. All of it is recorded verbatim in the raw Mentimeter export, linked
+    below.</p>
+
+  <h3>From sticky notes to a table</h3>
+  <p>Organizers spent the following week turning eight posters and dozens of Mentimeter answers into a single
+    draft: five principles, their subprinciples, and the practices that would put them into effect. Not every
+    suggestion survived the cut — a table of ideas left out, from "protection layers for AI where needed" to
+    "invest in engagement of board members," is preserved in full in the archive below.</p>
+  <p>The version published July 8, 2026 — the table at the top of this page — grounds the framework's three
+    values directly in UNESCO's Open Science recommendation and the NPOS ambition document, and its principles in
+    a wider set of existing frameworks: the TRUST Principles for digital repositories, the Principles of Open
+    Scholarly Infrastructure (POSI), the Seven Guiding Principles for Open Research Information — the same 2022
+    document deliverable 1B's <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/#7gpri">maturity
+    assessment tool</a> now offers as its own 7GPRI framework — and a forthcoming national open-access strategy.</p>
+
+  <h3>What happens next</h3>
+  <p>This table is a draft, not a finished standard: the subprinciples under Researcher-centric are thinner than
+    the rest, and the actions list still reads more like a first pass than a settled taxonomy. It is also the
+    direct basis for the <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/#spii">SPII v0.1
+    framework</a> in deliverable 1B's maturity assessment tool — so a correction made here should eventually be
+    reflected there too. Use the feedback link above to propose one.</p>
+</section>
+
+<section class="section section--wide data-section" id="original-maturity-matrix">
+  <h2>Original maturity matrix</h2>
+  <p class="section-note">A separate, earlier result: the first draft maturity matrix for these values and
+    principles, extracted verbatim from
+    <a href="https://github.com/tillbey/open-science-maturity">tillbey/open-science-maturity</a>, the precursor to
+    deliverable 1B's <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/">maturity assessment tool</a>.
+    Scored 0 (not yet assessed) to 4 per subprinciple. This was an unfinished draft — most level
+    descriptions below are still placeholder text (<span class="placeholder">…</span> or "Maturity level N"),
+    kept as-is for faithful extraction rather than filled in.</p>
+  <div class="table-scroll">
+    <table class="matrix">
+      <caption>Source: data/original-maturity-matrix.csv</caption>
+      <colgroup>
+        <col style="width:150px"><col style="width:220px">
+        <col style="width:182px"><col style="width:182px"><col style="width:182px"><col style="width:182px">
+      </colgroup>
+      <thead>
+        <tr><th>Value</th><th>Subprinciple</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="group-cell" rowspan="3">Open<br><span class="level-desc">The most crucial principle for Open Science infrastructures.</span></td>
+          <td>Results openly available<br><span class="level-desc">Results refers to any output created by the infrastructure itself (the software running the infrastructure) or stored in it (e.g. datasets, content).</span></td>
+          <td><span class="level-name">Results not available</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Metadata about results available</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Results openly available</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">FAIR results</span><span class="level-desc">All results are adhering fully to the FAIR principles.</span></td>
+        </tr>
+        <tr>
+          <td>Transparent processes<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td>Innovative<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">At a stand still</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Ad-hoc improvements</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Continously innovating</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td class="group-cell" rowspan="3">Autonomy<br><span class="level-desc">Who is calling the shots.</span></td>
+          <td>Community governed<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td>Clear responsibilities<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td>Vendor independent<br><span class="level-desc">Check for example the <a href="https://utrechtuniversity.github.io/digital-autonomy-assessment-tool/">Digital Autonomy Assessment Framework</a></span></td>
+          <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td class="group-cell" rowspan="4">Sustainable<br><span class="level-desc">Keeping the lights on.</span></td>
+          <td>Financially secure<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Unfunded</span><span class="level-desc">There is no funding at the moment and for the forseeable future.</span></td>
+          <td><span class="level-name">Time-limited funding</span><span class="level-desc">There is time-limited funding, e.g. through a one-off grant or donation.</span></td>
+          <td><span class="level-name">Recurrent commitment</span><span class="level-desc">There is for a number of years funding, e.g. through memberships and recurrent grants.</span></td>
+          <td><span class="level-name">Structually funded</span></td>
+        </tr>
+        <tr>
+          <td>Human capacity available<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Zombie infrastructure</span><span class="level-desc">No one is working on this infrastructure for a forseeable time.</span></td>
+          <td><span class="level-name">One-person show</span><span class="level-desc">One hero is keeping the lights on, but there is no backup.</span></td>
+          <td><span class="level-name">Somewhat staffed</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Dedicated resourcing</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td>Legal and policy compliant<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Unknown</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Major gaps</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Bases covered</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Audited or certified</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td>Resilient<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Falls over at the first breeze</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Major gaps</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Bases covered</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Can weather a hurricane</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td class="group-cell" rowspan="3">Usable<br><span class="level-desc">Providing a good user experience and letting researchers achieve their goals.</span></td>
+          <td>Interconnected<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Isolated system</span><span class="level-desc">This infrastructure has non integrations with others, and makes it difficult to even exchange data.</span></td>
+          <td><span class="level-name">Uses other systems</span><span class="level-desc">Ingest e.g. data from other systems.</span></td>
+          <td><span class="level-name">Two-way connected</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Part of flourishing ecosystem</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td>Seamless user-experience<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+        </tr>
+        <tr>
+          <td>Accessible to all<br><span class="level-desc">Explanatory text</span></td>
+          <td><span class="level-name">Maturity level 1</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 2</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 3</span><span class="placeholder">…</span></td>
+          <td><span class="level-name">Maturity level 4</span><span class="placeholder">…</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="csv-link"><a href="data/original-maturity-matrix.csv" download>Download as CSV</a> · see <a href="data/README.md">data/README.md</a> for provenance.</p>
+</section>
+
+<section class="section section--narrow data-section" id="source-materials">
+  <h2>Full transparency: the source archive</h2>
+  <p class="section-note">Every file behind the story above — as received or produced on the day, plus a
+    converted copy of each (docx→md, xlsx→csv, pptx→pdf) for easier viewing. See
+    <a href="data/consultation/README.md">data/consultation/README.md</a> for the conversion notes.</p>
+
+  <div class="archive-stage">
+    <h3>1. Consultation programme</h3>
+    <ul class="archive-files">
+      <li><a href="data/consultation/01-consultation-program/guiding-principles-briefing-2026-06-17.md">Guiding principles briefing</a> <span class="file-note">pre-reading, June 17, 2026 (NPOS + POSI) — also as <a href="data/consultation/01-consultation-program/guiding-principles-briefing-2026-06-17.docx">.docx</a></span></li>
+      <li><a href="data/consultation/01-consultation-program/programme.md">Programme</a> <span class="file-note">the day's run-of-show — also as <a href="data/consultation/01-consultation-program/programme.docx">.docx</a></span></li>
+      <li><a href="data/consultation/01-consultation-program/handout.pdf">Reference-model handout</a></li>
+      <li><a href="data/consultation/01-consultation-program/presentation-2026-07-01.pdf">Opening presentation</a> <span class="file-note">reconstructed PDF (text + diagrams, not original slide design) — original at <a href="data/consultation/01-consultation-program/presentation-2026-07-01.pptx">.pptx</a></span></li>
+    </ul>
+  </div>
+
+  <div class="archive-stage">
+    <h3>2. Consultation output, raw</h3>
+    <ul class="archive-files">
+      <li><a href="data/consultation/02-consultation-output-raw/mentimeter/results-overview.pdf">Mentimeter results overview</a></li>
+      <li><a href="data/consultation/02-consultation-output-raw/mentimeter/raw-data__voters.csv">Raw Mentimeter data</a> <span class="file-note">also <a href="data/consultation/02-consultation-output-raw/mentimeter/raw-data__session-1.csv">session-1.csv</a>, or the original <a href="data/consultation/02-consultation-output-raw/mentimeter/raw-data.xlsx">.xlsx</a></span></li>
+      <li><a href="data/consultation/02-consultation-output-raw/mentimeter/current-challenges.csv">"What are the current challenges" — full answers</a> <span class="file-note">also as <a href="data/consultation/02-consultation-output-raw/mentimeter/current-challenges.xlsx">.xlsx</a></span></li>
+      <li><a href="data/consultation/02-consultation-output-raw/mentimeter/which-infrastructure.csv">"Which infrastructure do you represent" — full answers</a> <span class="file-note">also as <a href="data/consultation/02-consultation-output-raw/mentimeter/which-infrastructure.xlsx">.xlsx</a></span></li>
+      <li><span class="file-note">Breakout-group posters (photos):</span>
+        <a href="data/consultation/02-consultation-output-raw/posters/poster-1.jpg">1</a>,
+        <a href="data/consultation/02-consultation-output-raw/posters/poster-2.jpg">2</a>,
+        <a href="data/consultation/02-consultation-output-raw/posters/poster-3.jpg">3</a>,
+        <a href="data/consultation/02-consultation-output-raw/posters/poster-4.jpg">4</a>,
+        <a href="data/consultation/02-consultation-output-raw/posters/poster-5.jpg">5</a>,
+        <a href="data/consultation/02-consultation-output-raw/posters/poster-6.jpg">6</a>,
+        <a href="data/consultation/02-consultation-output-raw/posters/poster-7.jpg">7</a>,
+        <a href="data/consultation/02-consultation-output-raw/posters/poster-8.jpg">8</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="archive-stage">
+    <h3>3. Consultation output, processed</h3>
+    <ul class="archive-files">
+      <li><a href="data/consultation/03-consultation-output-processed/draft-synopsis.md">Draft synopsis</a> <span class="file-note">principles/subprinciples/consequences, first pass — also as <a href="data/consultation/03-consultation-output-processed/draft-synopsis.docx">.docx</a></span></li>
+      <li><a href="data/consultation/03-consultation-output-processed/other-principles-suggested.csv">Other principles suggested (not adopted)</a> <span class="file-note">also as <a href="data/consultation/03-consultation-output-processed/other-principles-suggested.xlsx">.xlsx</a></span></li>
+      <li><a href="data/consultation/03-consultation-output-processed/posters-processed.csv">Posters, transcribed</a> <span class="file-note">also as <a href="data/consultation/03-consultation-output-processed/posters-processed.xlsx">.xlsx</a></span></li>
+    </ul>
+  </div>
+
+  <div class="archive-stage">
+    <h3>4. Consultation outcome framework</h3>
+    <ul class="archive-files">
+      <li><a href="data/consultation/04-consultation-outcome-framework/values-and-principles-2026-07-08.md">Values and principles, July 8, 2026</a> <span class="file-note">the source for the outcome table at the top of this page — also as <a href="data/consultation/04-consultation-outcome-framework/values-and-principles-2026-07-08.docx">.docx</a></span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="section section--narrow">
   <footer>Part of the <a href="https://surf-ori.github.io/spii-overview/">SPII overview</a>. See the <a href="https://surf-ori.github.io/spii-overview/#way-of-working">way of working</a> for how a curator reviews feedback and records the outcome.</footer>
 </div>
 </body>

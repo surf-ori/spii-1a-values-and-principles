@@ -1,0 +1,255 @@
+Question 1,
+Date (UTC),2026-07-01
+Session,1
+Type,open
+Question,Which infrastructure are you working on/do you represent?
+Respondents,50
+,
+Responses,Upvotes
+WijsNL,0
+ODISSEI,0
+Dans,0
+Open Hardware,0
+"Broccoli, MORIS",0
+RDM,0
+SPI-Birds,0
+COS UNL rep,0
+Research Software Directory,0
+4TU.ResearchData,0
+Yoda,0
+CROWN,0
+DOAJ,0
+DURF,0
+SPII core team - Universities of Applied Sciences (DCC-PO),0
+Brightlands Plant open DataHub,0
+TDCC-SSH / DANS,0
+Everything at the TU/e but also HORA 3,0
+OpenML,0
+Funding open science infrastructure - does that count? ;-),0
+GWI grote wetenschappelijk infrastructuren,0
+4TU.ResearchData,0
+Governance structures for OS infra in NL,0
+Health-RI,0
+OPynSim,0
+All,0
+None,0
+Netherlands eScien Center,0
+DOAJ,0
+None,0
+the Human Infrastructure if the Dutch RDM support community,0
+Yoda,0
+open science communities,0
+TDCC-LSH,0
+Research -ICT,0
+Research ICT,0
+"CRIS, (data) Repositories,",0
+Osc,0
+DURF Dutch Repository Federation,0
+Yoda,0
+Pure,0
+Cos,0
+Research infrastructure as a whole,0
+"Rdm,
+Durf,",0
+Chains of the Past,0
+Open science,0
+Research ICT,0
+"OSC, ORI, RDM, RMS, ...",0
+Diamond OA,0
+PRC,0
+WUR journal browser,0
+OSHNED,0
+4TU researchdata,0
+MICR,0
+SPII,0
+SLIPPRS,0
+Open Science Infrastructure: A platform connecting the mycological (fungal) data,0
+CRIS,0
+OO Monitor,0
+Broccoli,0
+DCC-IN,0
+machine actionable DMPs/OSTrails NL Pilot,0
+,
+,
+,
+Question 2,
+Date (UTC),2026-07-01
+Session,1
+Type,open
+Question,What are the current challenges creating a coherent and connected Open Science infrastructure landscape?
+Respondents,44
+,
+Responses,Upvotes
+Communication,0
+Including the GWI,0
+Closed source software,0
+Governance,0
+Sustainability,0
+Governance,0
+Interoperabilità,0
+Coordination (regie) / leadership,0
+Language and common understanding,0
+Operating standards,0
+Researcher-central approach,0
+need for small-scale/niche infrastructure solutions,0
+Finance in the long run,0
+Governance,0
+Sharpening the vision,0
+Fragmentation,0
+not enough money,0
+Lack of standars for interoperability,0
+Governance,0
+Shared guiding principles,0
+Community,0
+"Many smaller infrastructure projects, relevant for certain communities, whose connection relies on bigger national infrastructures who may not have capacity",0
+Identify project activities that you collaborate on,0
+Thinking about connecting to other systems while they are still being developed,0
+Interoperability,0
+Willingness to give up institutional autonomy ?,0
+agreeing on standards across domains,0
+Get good ownership of national infrastructure,0
+Not enough structural support,0
+"Stop funding ""solo"" infrastructures.",0
+Structural funding for support,0
+Openscience.nl being a competition,0
+Finance,0
+"Organisational alignment (of policies, contracts, ...)",0
+Sustainability,0
+Broad usage,0
+Common goals,0
+Sustainable funding,0
+Create incentives (in the osnl call),0
+Herding introverted cats,0
+IAM and security within the right boundaries,0
+Not invented here,0
+Too little focus on sustainability,0
+Long term funding (sustainability),0
+proprietary software,0
+Aligning existing already developed solutions,0
+Project-based planning,0
+No thought about long term financial sustainability,0
+Focus,0
+Centralized vs decentralized/discipline-specific,0
+Too many ideas too little time,0
+Visibility,0
+Cultural attitude towardsOS,0
+lack of researchers picking up and maintaining open science infrastructure,0
+lack of open standards,0
+Sustainability,0
+Keeping open science democratic/open,0
+No knowledge on what researchers actually publish and tools they use,0
+"Too many opinions, how to align?",0
+Usability AND Security,0
+"Reinventing the wheel (spii, osnl projects, eosc, eosc-nl - to some extent all working on the same thing)",0
+No agreed principles to which everyone adheres to,0
+"discovery - knowing what's out there, how the projects relate, and where collaboration is even possible takes a lot of time and effort.",0
+Sustainability,0
+"Making everyine feel they are part of a common community, not in competition",0
+"Recogise the position of my own infra&project and how it connects, can be improved and made sustainable",0
+"Integration of domains (osc, ori, rdm, rms). Central indexing and dissemination, connect national infrastructure with local infrastruct, and with international infrastructure.",0
+Resources are not pooled (enough) for the whole sector or for national initiatives. Fragmentation will therefore always exist,0
+"Varying levels of organisational maturity to connect to OS infrastructure, e.g. differences between universities and UAS",0
+Guard digital sovereignty. Guard scientific integrity.,0
+User friendliness (like commercial products),0
+Secure solutions for personal data,0
+A common language,0
+"National coordination of local initiatives, also in the interest of cost effectiveness and sustainability.  Universities and HBO cannot individually develop and maintain local infrastructures.",0
+,
+,
+,
+Question 3,
+Date (UTC),
+Session,1
+Type,open
+Question,What would a reference model need to address these challenges?
+Respondents,0
+,
+No votes for this session,
+,
+,
+,
+Question 4,
+Date (UTC),2026-07-01
+Session,1
+Type,choices
+Question,Which proposed component of the reference model seems most valuable to you?
+Respondents,51
+,
+Choices,Votes
+Values & principles,14
+Landscape overview,12
+Interoperability framework,22
+Shared terminology,3
+,
+,
+,
+Question 5,
+Date (UTC),2026-07-01
+Session,1
+Type,open
+Question,"Beyond a reference model, what other expectations or needs do you have regarding a coherent Open Science infrastructure?"
+Respondents,7
+,
+Responses,Upvotes
+A framework for engagement,0
+A clear governance model,0
+Sustainable funding,0
+Best practices,0
+Principles that ensure user value,0
+Reference architecture -> fit gap analysis with existing infrastructure -> project plans to develop infrastructural components that fill the gaps -> budget/ finance plans to carry out those projects.,0
+Safety for respondents and researchers as well as data as pre-condition,0
+Organisational interoperability for collaboration using the infrastructure,0
+It just works,0
+.,0
+Ggg,0
+,
+,
+,
+Question 6,
+Date (UTC),2026-07-01
+Session,1
+Type,choices
+Question,Where could you contribute?
+Respondents,33
+,
+Choices,Votes
+Development self-assessment tool,2
+Landscape overview,11
+Shared terminology,5
+Interoperability framework,7
+Use-case Citizen Science,0
+Use-case Open Educational Resources,3
+Other use- case,2
+other...,3
+,
+,
+,
+Question 7,
+Date (UTC),2026-07-01
+Session,1
+Type,open
+Question,Do you have additional suggestions or remarks or suggestions for Next events?
+Respondents,18
+,
+Responses,Upvotes
+Bigger room!,0
+Invite researchers,0
+Don’t limit review & discussion of the reference a modem as a whole to the Open Science festival only!,0
+Focus on one area: organize research data,0
+1 or 2 show cases of running projects. Short pitches.,0
+This session did not help me for the osnl project,0
+Relation with EOSC(-NL) should be addressed,0
+Too abstract,0
+Bigger capacity,0
+Use Lego Serious Play to take on specific scenarios and use cases,0
+More connection to information managers in organisaties - they know the best what the researchers needs are,0
+With regard to involving faculty information managers: meet them where they are,0
+More connections with research infrastructures broader than open science infrastructures,0
+Send questions for attendees to share within their organisation before the meeting to collect input,0
+We have discussed the principles for years already. Focus on use cases and implementation.,0
+"Show examples.of the researcher journey process, interacting with internal and external systems",0
+Please convince me that we need additional principle harmonizing work given that the universities have already signed off the NPOS principles.,0
+Try to engage CIO's and board members too: people (partially)in charge of money (and what to spend it on),0
+Ownership: invite other to organise the workshops PLUS ownership  on consultation (let them add questions to their network) AND on self assessment tool questions to be incorporated relevant to their,0
+Announce inspraak moments earlier. Explain things better. Send a document with a proper management summary. Explain the connection with our OSNL project. We are not here to check your inspraak boxes,0
+"Work definitions, boundaries of the terms Values, Principles, etc. (preferably with examples)",0
