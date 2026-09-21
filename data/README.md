@@ -5,7 +5,7 @@
 The original SPII values maturity matrix, extracted verbatim from
 [tillbey/open-science-maturity](https://github.com/tillbey/open-science-maturity)
 (commit `1a4e16f`), the draft that later became deliverable 1B's
-[maturity assessment tool](https://github.com/surf-ori/spii-1b-maturity-assessment-tool).
+[Principles Alignment Tool](https://github.com/surf-ori/spii-1b-principles-alignment-tool).
 
 It scores 13 subprinciples, grouped under 4 values (Open, Autonomy, Sustainable, Usable), each
 on a 5-point scale: 0 (not yet assessed) plus 4 defined maturity levels.
