@@ -2,7 +2,13 @@
 
 A proposal to present the SPII principles as an extension of the Principles of Open Scholarly
 Infrastructure (POSI v2.0) instead of as a separate set, drafted on 2026-09-29 at the request of
-SPII's principles subgroup. The background is told in the "From SPII to POSI+" part of the story on
+SPII's principles subgroup.
+
+POSI+ is a name for the Dutch Open Science context — SPII's reference model and Open Science NL's
+infrastructure call. It is not a new version of POSI and is not published or endorsed by the POSI
+Adopters; POSI's own text is kept verbatim inside it.
+
+The background is told in the "From SPII to POSI+" part of the story on
 [the 1A page](https://surf-ori.github.io/spii-1a-values-and-principles/#how-these-were-formed); the
 analysis, proposal and matrix are rendered in the
 [POSI+ v0.5](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-plus) and
@@ -31,14 +37,17 @@ additions, text drafted from the 1A outcome and the v0.3 matrix).
 
 Columns: `Order`, `Section`, `Origin` (`POSI v2.0` or `SPII addition`), `Id`, `Principle`, `Text`,
 `SPII counterparts`, `Level 1`–`Level 4`, `Level source`, `Improvement action`,
-`Concepts reused from other frameworks`.
+`Concepts reused from other frameworks`, `Near yes/no`.
 
-`Level source` says, per principle, which level texts are verbatim from the v0.3 matrix (kept
-unchanged, typos included — see [`../README.md`](../README.md)) and which were drafted with AI. Drafted
-levels follow [`.claude/skills/spii-maturity-levels/SKILL.md`](../../.claude/skills/spii-maturity-levels/SKILL.md).
+`Level source` says, per principle, whether its levels rework the v0.3 matrix's own descriptions
+("Improved from SPII maturity matrix v0.3", the original staying unchanged in
+[`../original-maturity-matrix.csv`](../original-maturity-matrix.csv)) or are new. All level texts
+follow [`.claude/skills/spii-maturity-levels/SKILL.md`](../../.claude/skills/spii-maturity-levels/SKILL.md).
 `Concepts reused` names the framework in deliverable 1B's
 [Principles Alignment Tool](https://surf-ori.github.io/spii-1b-principles-alignment-tool/) whose ideas
-informed the wording (GORC, FAIR, BD, OSR, 7GPRI), where any did.
+informed the wording (GORC, FAIR, BD, OSR, 7GPRI), where any did. `Near yes/no` is `yes` for the
+three POSI principles that are really met-or-not (Cannot lobby; Revenue generated from services, not
+data; Patent non-assertion), whose Levels 2 and 4 are thin by nature.
 
 ## Sources
 

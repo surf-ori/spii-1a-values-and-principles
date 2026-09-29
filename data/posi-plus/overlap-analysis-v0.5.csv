@@ -5,24 +5,24 @@ Transparency: economical,1A 1.1,"Transparent operations (detailed financials, fe
 Transparency: strategical,1A 1.1,Transparent operations (strategic and product roadmaps),covered,POSI: Transparent operations
 Transparency: provenance; Transparent processes,1A 1.1; v0.3,None,missing,SPII addition: Transparent processes and provenance
 "Accessibility; Results openly available; Open data, APIs, repositories, metadata (actions 12-15)",1A 1.2; v0.3,"Open and secure data; Available and preserved — but only for data needed to run or fork the infrastructure, not findable access to every result it holds",partly,SPII addition: Findable and accessible results
-Open-source software (action 11); Open source,1A; v0.3,Open source,covered,POSI: Open source (v0.3 levels reused)
+Open-source software (action 11); Open source,1A; v0.3,Open source,covered,POSI: Open source (builds on the v0.3 levels)
 Open licences (action 16),1A,"Open source; Open and secure data (CC0) — licences for software and data, not compatible terms of use across systems",partly,SPII addition: Legal interoperability
 Public infrastructure stack (action 17); Support for public stack (action 36),1A,None,missing,SPII addition: Digital sovereignty
 "Knowledge security, security by design (action 18)",1A,Open and secure data — mentions security requirements in passing only,partly,SPII addition: Security by design and knowledge security
 Identity and access management with access for citizen scientists (action 19),1A,None,missing,SPII addition: Accessible to all
 Open to new ideas,v0.3,"Goal to generate surplus — the ability to adapt and change, not an innovation process",partly,SPII addition: Open to new ideas
 Open to participation,v0.3,Non-discriminatory participation or membership,covered,POSI: Non-discriminatory participation or membership
-Stakeholder governed / community-led; Community governed,1A 2.1; v0.3,Stakeholder governed,covered,POSI: Stakeholder governed (v0.3 levels reused)
+Stakeholder governed / community-led; Community governed,1A 2.1; v0.3,Stakeholder governed,covered,POSI: Stakeholder governed (builds on the v0.3 levels)
 Discipline-specific; Fit-for-purpose (action 23),1A 2.2,None — Coverage across the scholarly enterprise pulls the other way,missing,SPII addition: Fit for the community's purpose
 Digital sovereignty; Value-driven procurement (action 20); Balance agency versus costs and risks (action 21),1A 2.3,"None — the Insurance principles make forking possible, but do not ask who controls critical components",missing,SPII addition: Digital sovereignty
 Reduced dependence on single supplier; Contractual clauses and exit strategy (action 22),v0.3; 1A,"Open source; Interoperability and open standards — both lower lock-in, neither asks for an exit plan",partly,SPII addition: Reduced dependence on a single supplier
 Responsibility; Clear responsibilities,1A 2.4; v0.3,"Stakeholder governed — who decides, not who is accountable for operation",partly,SPII addition: Clear responsibilities
 Regular review of purpose and community value (action 24),1A,Regular review of purpose and community value (same wording),covered,POSI: Regular review of purpose and community value
-Financial sustainability; Financially secure; Sustainable funding (action 34),1A 3.1; v0.3,Time-limited funds; Goal to generate surplus; Financial reserves,covered,"POSI: Time-limited funds (v0.3 levels reused), Surplus, Reserves"
+Financial sustainability; Financially secure; Sustainable funding (action 34),1A 3.1; v0.3,Time-limited funds; Goal to generate surplus; Financial reserves,covered,"POSI: Time-limited funds (builds on the v0.3 levels), Surplus, Reserves"
 Make-or-buy guidelines (action 30); Total cost of ownership (action 31),1A,None,missing,SPII addition: Digital sovereignty (folded into its text)
 Mission-consistent revenue generation (action 32),1A,Mission-consistent revenue generation (same wording),covered,POSI: Mission-consistent revenue generation
 Enduring availability; End-of-life policy (action 33),1A 3.4,Living will; Available and preserved,covered,"POSI: Living will, Available and preserved"
-Human capacity sustainability; Human capacity available,1A 3.2; v0.3,Transition planning; Volunteer labour,covered,"POSI: Transition planning (v0.3 levels reused), Volunteer labour"
+Human capacity sustainability; Human capacity available,1A 3.2; v0.3,Transition planning; Volunteer labour,covered,"POSI: Transition planning (builds on the v0.3 levels), Volunteer labour"
 Legal and institutional compliance; Legal and policy compliant,1A 3.3; v0.3,"None — POSI only says ""within the constraints of privacy laws""",missing,SPII addition: Legal and policy compliance
 Resilient; Sustained maintenance (action 35),v0.3; 1A,"Financial reserves (for major unforeseen events) — financial, not operational resilience",partly,SPII addition: Operational resilience
 Institutionally embedded,v0.3,None,missing,SPII addition: Institutionally embedded
