@@ -10,4 +10,10 @@ under [`data/consultation/`](https://github.com/surf-ori/spii-1a-values-and-prin
 (originals plus converted `.md`/`.csv`/`.pdf` copies — see
 [`data/consultation/README.md`](https://github.com/surf-ori/spii-1a-values-and-principles/blob/main/data/consultation/README.md)).
 
+It also carries a draft **POSI+ v0.5** proposal: the SPII principles presented as an extension of
+the [Principles of Open Scholarly Infrastructure](https://openscholarlyinfrastructure.org/) (POSI
+v2.0), with an overlap analysis and a four-level maturity matrix — see
+[`data/posi-plus/`](https://github.com/surf-ori/spii-1a-values-and-principles/tree/main/data/posi-plus).
+AI-assisted and pending review by the SPII team.
+
 Open an issue to propose a correction, flag a gap, or suggest an addition. See the [way of working](https://surf-ori.github.io/spii-overview/#way-of-working) for how a curator reviews issues and records the outcome (accepted, rejected, or already covered) directly on the issue.
