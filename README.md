@@ -16,7 +16,7 @@ extension of the [Principles of Open Scholarly Infrastructure](https://openschol
 values and principles working group decided that POSI v2.0 is the official framework in the
 Principles Alignment Tool, and that this proposal goes to POSI's authors and community for careful
 review, aiming for official adoption by POSI globally — see
-[`data/posi-plus/`](https://github.com/surf-ori/spii-1a-values-and-principles/tree/main/data/posi-plus).
+[`data/posi-spii/`](https://github.com/surf-ori/spii-1a-values-and-principles/tree/main/data/posi-spii).
 AI-assisted and pending review by the SPII team.
 
 Open an issue to propose a correction, flag a gap, or suggest an addition. See the [way of working](https://surf-ori.github.io/spii-overview/#way-of-working) for how a curator reviews issues and records the outcome (accepted, rejected, or already covered) directly on the issue.

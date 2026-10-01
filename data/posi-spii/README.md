@@ -14,8 +14,8 @@ not published or endorsed by the POSI Adopters; POSI's own text is kept verbatim
 The background is told in the "From SPII to POSI+SPII" part of the story on
 [the 1A page](https://surf-ori.github.io/spii-1a-values-and-principles/#how-these-were-formed); the
 analysis, proposal and matrix are rendered in the
-[POSI+SPII v0.5](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-plus) and
-[maturity matrix](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-plus-maturity-matrix)
+[POSI+SPII v0.5](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-spii) and
+[maturity matrix](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-spii-maturity-matrix)
 sections.
 
 **AI-assisted.** Both files were drafted with AI (Claude) and have not yet been reviewed by the
@@ -31,7 +31,7 @@ Columns: `SPII item`, `SPII source` (`1A 1.1` = subprinciple 1.1 of the July 8 o
 [`original-maturity-matrix.csv`](../original-maturity-matrix.csv)), `POSI v2.0 counterpart`,
 `Verdict` (`covered` / `partly` / `missing`), `Where it lands in POSI+SPII`.
 
-## `posi-plus-v0.5.csv`
+## `posi-spii-v0.5.csv`
 
 The POSI+SPII v0.5 framework and its four-level maturity matrix: 37 principles in 8 sections — POSI's
 own Governance, Sustainability and Insurance (20 principles, text verbatim from POSI v2.0), then

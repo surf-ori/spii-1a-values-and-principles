@@ -13,9 +13,9 @@ framework grew out of, and a full transparency archive of every source file unde
 `data/consultation/README.md` for what's in the archive and how the conversions were made, and
 `data/README.md` for the maturity-matrix CSV's own provenance. Since 2026-09-29 it also carries a
 draft POSI+SPII merged v0.5 proposal (the SPII principles presented as an extension of POSI v2.0; since the working group's 2026-10-01 decision, POSI v2.0 itself is the official framework in the 1B tool and POSI+SPII is to be discussed with the POSI community): an overlap
-analysis, the merged 37-principle framework and its four-level maturity matrix, in the `#posi-plus`
-and `#posi-plus-maturity-matrix` sections, with `data/posi-plus/*.csv` as their source of truth — see
-`data/posi-plus/README.md`. `.claude/skills/spii-maturity-levels/SKILL.md` is the guidance used to
+analysis, the merged 37-principle framework and its four-level maturity matrix, in the `#posi-spii`
+and `#posi-spii-maturity-matrix` sections, with `data/posi-spii/*.csv` as their source of truth — see
+`data/posi-spii/README.md`. `.claude/skills/spii-maturity-levels/SKILL.md` is the guidance used to
 write level descriptions; use it for any further level text. Application code beyond this static
 page is still out of scope.
 
