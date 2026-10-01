@@ -10,9 +10,12 @@ under [`data/consultation/`](https://github.com/surf-ori/spii-1a-values-and-prin
 (originals plus converted `.md`/`.csv`/`.pdf` copies — see
 [`data/consultation/README.md`](https://github.com/surf-ori/spii-1a-values-and-principles/blob/main/data/consultation/README.md)).
 
-It also carries a draft **POSI+ v0.5** proposal: the SPII principles presented as an extension of
-the [Principles of Open Scholarly Infrastructure](https://openscholarlyinfrastructure.org/) (POSI
-v2.0), with an overlap analysis and a four-level maturity matrix — see
+It also carries a draft **POSI+SPII merged v0.5** proposal: the SPII principles presented as an
+extension of the [Principles of Open Scholarly Infrastructure](https://openscholarlyinfrastructure.org/)
+(POSI v2.0), with an overlap analysis and a four-level maturity matrix. On October 1, 2026, SPII's
+values and principles working group decided that POSI v2.0 is the official framework in the
+Principles Alignment Tool, and that this proposal goes to POSI's authors and community for careful
+review, aiming for official adoption by POSI globally — see
 [`data/posi-plus/`](https://github.com/surf-ori/spii-1a-values-and-principles/tree/main/data/posi-plus).
 AI-assisted and pending review by the SPII team.
 
