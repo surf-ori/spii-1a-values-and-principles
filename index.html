@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-accent="1a">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SPII 1A: Values and Principles</title>
 <meta name="description" content="Shared values and principles that define a connected Open Science infrastructure.">
+<link rel="icon" type="image/svg+xml" href="https://surf-ori.github.io/spii-design-system/assets/favicon.svg">
+<!-- SPII design system: shared top bar (site menu, theme choice) and feedback button -->
+<link rel="stylesheet" href="https://surf-ori.github.io/spii-design-system/spii.css">
+<script src="https://surf-ori.github.io/spii-design-system/spii-nav.js"></script>
 <style>
   :root{
     --bg:#f6f4ec; --surface:#ffffff; --text:#161f18; --text-muted:#4d5850;
-    --accent:#1f5c43; --accent-strong:#153f2e; --on-accent:#fbfdfb; --border:#d9d4c3;
+    --accent:var(--spii-1a-ink, #1f5c43); --accent-strong:var(--spii-1a-ink, #153f2e); --on-accent:var(--accent-on, #fbfdfb); --border:#d9d4c3;
   }
   @media (prefers-color-scheme: dark){
-    :root{
+    :root:not([data-theme="light"]){
       --bg:#10140f; --surface:#161c15; --text:#eae7db; --text-muted:#9fad9f;
-      --accent:#59b98a; --accent-strong:#7fd1a6; --on-accent:#10140f; --border:#2b342a;
+      --accent:var(--spii-1a-ink, #59b98a); --accent-strong:var(--spii-1a-ink, #7fd1a6); --on-accent:var(--accent-on, #10140f); --border:#2b342a;
     }
   }
+  :root[data-theme="dark"]{
+      --bg:#10140f; --surface:#161c15; --text:#eae7db; --text-muted:#9fad9f;
+      --accent:var(--spii-1a-ink, #59b98a); --accent-strong:var(--spii-1a-ink, #7fd1a6); --on-accent:var(--accent-on, #10140f); --border:#2b342a;
+  }
   *{box-sizing:border-box;}
-  body{margin:0; background:var(--bg); color:var(--text); font-family:system-ui, sans-serif; line-height:1.55;}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--font-sans, system-ui, sans-serif); line-height:1.55;}
   .section{margin:0 auto; padding:0 20px;}
   .section--narrow{max-width:640px;}
   .section--wide{max-width:1140px;}
@@ -34,8 +42,6 @@
   .btn-secondary{background:transparent; color:var(--text); border:1px solid var(--border);}
   a{color:var(--accent-strong);}
   .ai-disclosure{display:inline-block; margin:0 0 22px; padding:5px 12px; border:1px solid var(--border); border-radius:20px; font-size:12.5px; color:var(--text-muted);}
-  .back-link{display:block; margin-bottom:16px; font-size:13px; color:var(--text-muted); text-decoration:none;}
-  .back-link:hover{color:var(--accent-strong);}
   footer{margin-top:8px; font-size:13px; color:var(--text-muted); border-top:1px solid var(--border); padding:20px 20px 64px; max-width:640px; margin-left:auto; margin-right:auto;}
 
   section.data-section{margin-top:56px;}
@@ -103,12 +109,13 @@
   .plain-list li{margin-bottom:6px;}
   .near-binary{display:block; margin-top:6px; font-size:11.5px; font-weight:600; color:var(--accent-strong);}
   .draft-note{border:1px dashed var(--accent); border-radius:4px; padding:12px 16px; font-size:13.5px; color:var(--text-muted); max-width:80ch;}
+  .deliv-hex{display:block; margin:0 0 14px;}
 </style>
 </head>
 <body>
 
 <div class="section section--narrow hero">
-  <a class="back-link" href="https://surf-ori.github.io/spii-overview/">&larr; Back to spii-overview</a>
+  <img class="deliv-hex" src="https://surf-ori.github.io/spii-design-system/assets/hex/1a.svg" alt="" width="54" height="73">
   <span class="kicker">Reference model · SPII 1A</span>
   <h1>Values and Principles</h1>
   <p>Shared values and principles that define a connected Open Science infrastructure — drafted at a national consultation on July 1, 2026, and published here as a work in progress.</p>
