@@ -48,3 +48,7 @@ its wording, not remove it, once a named person has actually reviewed that text 
 - English throughout.
 - No code changes are expected in this repo beyond `.github/` configuration and these context
   files.
+
+## Look and navigation
+
+`index.html` loads the [SPII design system](https://surf-ori.github.io/spii-design-system/) (`spii.css`, `spii-nav.js`): the shared top bar with the menu to the other SPII sites and the theme choice, the floating Feedback button (it opens `.github/ISSUE_TEMPLATE/feedback.yml` with the text in the `feedback` field), the favicon and this deliverable's hexagon and accent colour (`data-accent` on `<html>`). The page's own dark tokens apply under `:root[data-theme="dark"]` and, for "system", under the dark-mode media query. Without the design system the page keeps working in the SPII green.
