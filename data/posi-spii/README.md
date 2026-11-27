@@ -5,7 +5,7 @@ Infrastructure (POSI v2.0) instead of as a separate set, drafted on 2026-09-29 a
 SPII's principles subgroup.
 
 On October 1, 2026, SPII's values and principles working group decided that POSI v2.0 is the
-official assessment framework in the Principles Alignment Tool. The four-level maturity scale and
+official assessment framework in the Principles Alignment Assessment Tool. The four-level maturity scale and
 the SPII additions proposed here will be shown to and discussed with POSI's authors and the wider
 POSI community. They need careful review there, with the aim of a mandate for POSI to adopt them
 officially, on a global scale. Until then, POSI+SPII is a draft proposal, not a version of POSI, and
@@ -47,7 +47,7 @@ Columns: `Order`, `Section`, `Origin` (`POSI v2.0` or `SPII addition`), `Id`, `P
 [`../original-maturity-matrix.csv`](../original-maturity-matrix.csv)) or are new. All level texts
 follow [`.claude/skills/spii-maturity-levels/SKILL.md`](../../.claude/skills/spii-maturity-levels/SKILL.md).
 `Concepts reused` names the framework in deliverable 1B's
-[Principles Alignment Tool](https://surf-ori.github.io/spii-1b-principles-alignment-tool/) whose ideas
+[Principles Alignment Assessment Tool](https://surf-ori.github.io/spii-1b-principles-alignment-tool/) whose ideas
 informed the wording (GORC, FAIR, BD, OSR, 7GPRI), where any did. `Near yes/no` is `yes` for the
 three POSI principles that are really met-or-not (Cannot lobby; Revenue generated from services, not
 data; Patent non-assertion), whose Levels 2 and 4 are thin by nature.
